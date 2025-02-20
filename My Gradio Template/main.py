@@ -18,7 +18,7 @@ def run(server):
     command = "start"
     while True:
         match command:
-            case "restart": # Restarts server libraries and data.
+            case "restart": # Restarts server libraries and data. (Recommended)
                 server.restart()
             case "start": 
                 server.start()

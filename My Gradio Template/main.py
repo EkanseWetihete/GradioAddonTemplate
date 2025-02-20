@@ -7,7 +7,7 @@ I've made some simple Framework addon or template idk how to call it, that poten
 Change the parameters in FrontEnd.py and WebData.json file and sort types in the same order for it to work.
 You can reload libraries without turning off the program by typing "restart" 
 
-It is still under development and will be updated in the future ~ShiroSnake.
+It is still under development and will be updated in the future ~ShiroSnake /aka EkanseWetihete.
 
 
 Run main.py file to start using it. (http://127.0.0.1:7860/)

@@ -1,0 +1,24 @@
+<style>
+h2 {
+    color: #3498db
+}
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+#testing {
+    color: orange;
+    font-weight: bold;
+}
+
+.fillable.svelte-69rnjb.app {
+    background-color: #D0F8D0;
+	width: 90%;
+}
+
+.gradio-container.gradio-container-5-16-1.svelte-69rnjb {
+    background-color: green;  
+}
+
+</style>

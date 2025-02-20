@@ -19,7 +19,7 @@ class Server:
         importlib.reload(Input) # Reloads libraries so you could change while program is running
         importlib.reload(Output)
         
-        data_inputs, data_outputs = Input.load_data_types()
+        data_inputs = Input.load_data_types()
         
         data_outputs = [gr.HTML()]
         

@@ -20,11 +20,11 @@ def run(server):
         match command:
             case "restart": # Restarts server libraries and data.
                 server.restart()
-            case "start": # Starts the server
+            case "start": 
                 server.start()
-            case "stop": # Stops the server
+            case "stop": 
                 server.stop()
-            case "exit": # Stops the program
+            case "exit": 
                 print("Exiting the program.")
                 server.stop()
                 break

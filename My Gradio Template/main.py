@@ -18,7 +18,7 @@ def run(server):
     command = "start"
     while True:
         match command:
-            case "restart": # Restarts server together with FrontEnd.py and JSON Data file.
+            case "restart": # Restarts server libraries and data.
                 server.restart()
             case "start": # Starts the server
                 server.start()

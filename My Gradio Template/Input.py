@@ -33,11 +33,5 @@ def load_data_types(): # Gets the data from json file and sends to the input fil
                     inputs.append(gr.Video(label=input_data["label"]))
                 case _:
                     raise ValueError(f"Unsupported input type: {input_data['type']}")
-        
-        outputs = []
-        for output_data in data["outputs"]:
-            match output_data["type"]: 
-                case "text":
-                    outputs.append(output_data["type"])
-        return inputs, outputs
+        return inputs
     

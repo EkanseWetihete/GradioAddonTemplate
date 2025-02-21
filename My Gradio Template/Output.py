@@ -1,12 +1,13 @@
 from AI_test_huggingface import AiChat
 
-def gradio_output(name, length, repetition_size, temperature, probability, randomness):
+def gradio_output(AI_Type, AI_Model, name, length, repetition_size, temperature, probability, randomness):
     output_instance = OutputClass(name, length, repetition_size, temperature, probability, randomness)
+    
     
     return output_instance.output()
 
 class OutputClass:
-    def __init__(self, name, length, repetition_size, temperature, probability, randomness):
+    def __init__(self,  name, length, repetition_size, temperature, probability, randomness):
         self.name = name
         self.length = length
         self.repetition_size = repetition_size

@@ -6,16 +6,16 @@ import importlib
 import time
 
 class Server:
-    def __init__(self, port=7860):
+    def __init__(self, port=7860, server_address="0.0.0.0"):
         self.port = port
         self.gradio_interface = None
+        self.server_address = server_address
     
     # Server Management
     def start_gradio_server(self):
         if self.gradio_interface is not None:
             print("Gradio server is already running.")
             return
-        
         importlib.reload(Input) # Reloads libraries so you could change while program is running
         importlib.reload(Output)
         
@@ -31,9 +31,7 @@ class Server:
             js=Input.get_JS()
         )
         
-        self.gradio_interface.launch(server_port=self.port, share=False)
-        print("Gradio server has started!")
-
+        self.gradio_interface.launch(server_port=self.port, server_name=self.server_address, share=False)
     def stop_gradio_server(self):
         if self.gradio_interface is not None:
             self.gradio_interface.close()
@@ -49,7 +47,6 @@ class Server:
             self.stop_gradio_server()
         time.sleep(3)
         self.start_gradio_server()
-        print("Gradio server restarted successfully!")
     
     def start(self):
         if not self.gradio_interface:

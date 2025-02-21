@@ -1,6 +1,16 @@
 {
   "inputs": [
     {
+      "type": "dropdown",
+      "label": "AI Type",
+      "name": "Chat_Model"
+    },
+	{
+      "type": "dropdown",
+      "label": "AI Model",
+      "name": "PhilipTheGreat/DiabloGPT-small-Traveller DiabloGPT-medium"
+    },
+    {
       "type": "textbox",
       "label": "Input Text",
 	  "placeholder": ""
@@ -39,13 +49,8 @@
     },
     {
       "type": "checkbox",
-      "label": "Enable Randomness",
+	  "label": "Randomness",
 	  "Enabled": "True"
-    }
-  ],
-  "outputs": [
-    {
-      "type": "text"
     }
   ]
 }

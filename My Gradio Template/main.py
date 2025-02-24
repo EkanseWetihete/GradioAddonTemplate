@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from AI_test_huggingface import AiChat as model
+#from AI_test_huggingface import AiChat as model
 from server import Server
 
 """
@@ -32,7 +32,7 @@ def run(server):
         command = input("Input 'start', 'exit', or 'restart' to control the server: \n").strip().lower()
 
 if __name__ == "__main__":
-    model().chat("Downloading a model, if you dont have it.")
+    #model("PhilipTheGreat/DiabloGPT-small-Traveller").chat("Downloading a model, if you dont have it.")
     
     server = Server(port=7860, server_address="0.0.0.0")
     run(server)

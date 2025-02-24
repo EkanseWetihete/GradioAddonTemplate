@@ -56,10 +56,16 @@ def load_data_types(): # Gets the data from json file and sends to the input fil
                             elem_id=input_data.get("elem_id", ""),
                         ))
                     case "dropdown":
+                        choice_list = ""
+                        if input_data.get("ai_models_location", "None") == "None":
+                            choice_list = input_data["name"]
+                        else:
+                            choice_list = input_data["name"]
+                            
                         inputs.append(gr.Dropdown(
                             label=input_data.get("label", "Default Dropdown Label"),
                             choices=input_data.get("name", "None").split(),
-                            value=input_data.get("value", input_data["name"].split()[0]),
+                            value=input_data.get("value", choice_list.split()[0]),
                             multiselect=input_data.get("multiselect", False),
                             interactive=input_data.get("interactive", True),
                             info=input_data.get("info", ""),

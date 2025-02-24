@@ -8,7 +8,8 @@
 	{
       "type": "dropdown",
       "label": "AI Model",
-      "name": "PhilipTheGreat/DiabloGPT-small-Traveller DiabloGPT-medium"
+      "name": "PhilipTheGreat/DiabloGPT-small-Traveller DiabloGPT-medium",
+	  "ai_models_location": "True"
     },
     {
       "type": "textbox",

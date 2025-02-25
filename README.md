@@ -19,4 +19,4 @@ I've made a starting place for html, css and js so you can test your code if it 
 4. main.js - It waits for a testing button to exist and once it does, gives a functionality to it. If clicked, every output element is removed.
 
 main.py - All you need to do is start this file and the server will be up! (Default ip: http://127.0.0.1:7860/)
-
+(It might load a few minutes upon first startup and "submit" click)

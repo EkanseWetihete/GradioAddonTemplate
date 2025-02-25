@@ -7,7 +7,7 @@ WebData.json - I've tried to add all the important functionalities as it has in 
 
 Output.py - According to given parameters, it sends to AI Chat, recieves response and sends back the HTML data after clicking "Submit" towards the website.
 
-AI_test_huggingface.py - Takes models from huggingface website and downloads them. You can change and choose your own pre-trained models to test.
+AI_test_huggingface.py - Takes models from huggingface website and downloads them (or uses the downloaded models). You can change and choose your own pre-trained models to test.
 
 Server.py - Server management part has library reloading functions, hosts and reads data from Input and Output. Commandline part can stop, start, exit and restart the server. 
 Restarting will reload Input and Output libraries, which makes it way easier to change AI models, website functionality wether it is javascript, css or changing WebData Blocks.

@@ -7,7 +7,7 @@ WebData.json - I've tried to add all the important functionalities as it has in 
 
 Output.py - According to given parameters, it sends to AI Chat, recieves response and sends back the HTML data after clicking "Submit" towards the website.
 
-Output parameters has to be in the same order and the same amount as WebData.json inputs.
+-Output parameters has to be in the same order and the same amount as WebData.json inputs!
 
 AI_test_huggingface.py - Takes models from huggingface website and downloads them (or uses the downloaded models). You can change and choose your own pre-trained models to test.
 
